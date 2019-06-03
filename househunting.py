@@ -10,6 +10,7 @@ number_of_months = 0
 
 while current_savings <= portion_down_payment:
     number_of_months = number_of_months + 1
-    current_savings = current_savings + portion_saved + current_savings*r/12
+    return_on_investment = current_savings*r/12
+    current_savings = current_savings + portion_saved + return_on_investment
 
 print("Number of months: ", number_of_months)
